@@ -22,3 +22,4 @@ Then open `http://localhost:5500`.
 - Replace `assets/Harsh-Soni-Resume.pdf` with the actual resume file.
 - Update contact links and email in `index.html`.
 # Portfolio
+# Portfolio
