@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Harsh Yogesh Soni — Cloud Engineering Aspirant, DevOps-Oriented Builder & Leadership-Driven Problem Solver. Premium personal portfolio." />
+  <title>Harsh Yogesh Soni — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-line"></div>
+      <span class="loader-text">HYS</span>
+    </div>
+  </div>
+
+  <!-- CURSOR -->
+  <div id="cursor" class="cursor"></div>
+  <div id="cursor-follower" class="cursor-follower"></div>
+
+  <!-- NAV -->
+  <nav id="nav" class="nav">
+    <div class="nav-logo">HYS</div>
+    <ul class="nav-links">
+      <li><a href="#about" data-nav>About</a></li>
+      <li><a href="#leadership" data-nav>Leadership</a></li>
+      <li><a href="#skills" data-nav>Skills</a></li>
+      <li><a href="#experience" data-nav>Experience</a></li>
+      <li><a href="#projects" data-nav>Projects</a></li>
+      <li><a href="#academics" data-nav>Academics</a></li>
+      <li><a href="#contact" data-nav>Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Let's Talk</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#leadership" class="mobile-link">Leadership</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#academics" class="mobile-link">Academics</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="hero" class="hero">
+    <canvas id="heroCanvas" class="hero-canvas"></canvas>
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+
+    <div class="hero-content" id="heroContent">
+      <div class="hero-badge reveal-up">
+        <span class="hero-badge-dot"></span>
+        Available for Internships · 2025–26
+      </div>
+
+      <h1 class="hero-name reveal-up" data-delay="0.1">
+        <span class="hero-name-line">Harsh</span>
+        <span class="hero-name-line accent-line">Yogesh Soni</span>
+      </h1>
+
+      <div class="hero-headline reveal-up" data-delay="0.2">
+        Cloud Engineering Aspirant &nbsp;·&nbsp; DevOps-Oriented Builder &nbsp;·&nbsp; Leadership-Driven Problem Solver
+      </div>
+
+      <div class="hero-title-wrap reveal-up" data-delay="0.28">
+        <span class="hero-title-static">— </span>
+        <span id="heroTitle" class="hero-title-dynamic"></span>
+        <span class="hero-cursor-blink">|</span>
+      </div>
+
+      <p class="hero-tagline reveal-up" data-delay="0.4">
+        A highly driven B.Tech Information Technology student focused on building scalable cloud-native systems, automating workflows, and bridging the gap between development and operations through efficient engineering practices. Passionate about reliability, deployment intelligence, and creating impactful technology through strong technical execution and leadership.
+      </p>
+
+      <div class="hero-actions reveal-up" data-delay="0.55">
+        <a href="#projects" class="btn btn-primary">
+          <span>Explore Work</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+        <a href="#" class="btn btn-secondary" id="downloadResume">
+          <span>Download Resume</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M8 3v8M5 8l3 3 3-3M3 13h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="hero-stats reveal-up" data-delay="0.7">
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count="6">0</span>
+          <span class="hero-stat-label">Live Projects</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count="3">0</span>
+          <span class="hero-stat-label">Years Building</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count="20">0</span><span class="hero-stat-num hero-stat-plus">+</span>
+          <span class="hero-stat-label">Hackathons</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num">10.0</span>
+          <span class="hero-stat-label">Latest GPA</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <div class="hero-scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+
+    <div class="geo geo-1"></div>
+    <div class="geo geo-2"></div>
+    <div class="geo geo-3"></div>
+    <div class="geo geo-4"></div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="section about">
+    <div class="section-label reveal-left">01 · About</div>
+    <div class="about-grid">
+      <div class="about-heading-col reveal-left">
+        <h2 class="section-title">Engineered<br/>for Scale</h2>
+        <div class="about-line"></div>
+        <div class="about-institute reveal-left" data-delay="0.15">
+          <span class="about-institute-label">Institution</span>
+          <span class="about-institute-name">Madhuben & Bhanubhai Patel<br/>Institute of Technology (MBIT)</span>
+          <span class="about-institute-meta">B.Tech · Information Technology · 3rd Year, 6th Sem</span>
+        </div>
+      </div>
+      <div class="about-cards-col">
+        <div class="about-card reveal-up" data-delay="0.05">
+          <div class="about-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>B.Tech · Information Technology</h3>
+          <p>Pursuing IT engineering at MBIT with a strong foundation in systems design, distributed computing, and modern software delivery pipelines. Consistently top-ranked across recent semesters.</p>
+        </div>
+
+        <div class="about-card reveal-up" data-delay="0.15">
+          <div class="about-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M8 21h8M12 17v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Cloud / DevOps / MLOps Aspirant</h3>
+          <p>Building real expertise in cloud-native architectures, CI/CD pipelines, and operational intelligence. Bridging the gap between development and operations to improve delivery reliability at scale.</p>
+        </div>
+
+        <div class="about-card reveal-up" data-delay="0.25">
+          <div class="about-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.5"/>
+              <path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Disciplined Learner & Executor</h3>
+          <p>A disciplined and optimistic learner who manages complex responsibilities efficiently, leads with clarity, and collaborates effectively with minimal operational overhead — always shipping what matters.</p>
+        </div>
+
+        <div class="about-card reveal-up" data-delay="0.35">
+          <div class="about-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3>Scalable Systems Thinker</h3>
+          <p>Driven by designing systems that are not just functional — but resilient, intelligent, and built for global scale. Strongly interested in automating workflows and improving deployment intelligence.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LEADERSHIP ===================== -->
+  <section id="leadership" class="section leadership">
+    <div class="section-label reveal-left">02 · Leadership &amp; Responsibility</div>
+    <div class="leadership-header reveal-up">
+      <h2 class="section-title">Leading with<br/>Purpose</h2>
+      <div class="leadership-badge">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+        </svg>
+        General Secretary · MBIT 2026–27
+      </div>
+    </div>
+
+    <!-- Premium leadership cards (replaces timeline for cleaner layout) -->
+    <div class="leadership-cards-grid">
+      <div class="leadership-card leadership-card-featured reveal-up" data-delay="0.0">
+        <div class="lcard-tag">Governance</div>
+        <h3 class="lcard-title">General Secretary<br/>College Student Council</h3>
+        <p class="lcard-meta">MBIT · 2026–27</p>
+        <p class="lcard-desc">Elected General Secretary representing the entire student body of MBIT — driving student–administration engagement, institutional coordination, and policy advocacy that enhances campus experience and operational transparency.</p>
+        <ul class="lcard-points">
+          <li>Managing student representation across academic, infrastructural, and cultural dimensions</li>
+          <li>Driving initiatives that push MBIT toward higher student participation and organized execution</li>
+          <li>Bridging student concerns and administrative decision-making with clarity and accountability</li>
+        </ul>
+      </div>
+
+      <div class="leadership-card reveal-up" data-delay="0.1">
+        <div class="lcard-tag">Documentation</div>
+        <h3 class="lcard-title">Documentation Head</h3>
+        <p class="lcard-meta">ISTE Student Chapter · MBIT</p>
+        <p class="lcard-desc">Leading documentation, knowledge management, and structured knowledge sharing for MBIT's ISTE chapter — ensuring institutional continuity and professional publication standards.</p>
+      </div>
+
+      <div class="leadership-card reveal-up" data-delay="0.15">
+        <div class="lcard-tag">Execution</div>
+        <h3 class="lcard-title">Event Coordination &amp; Execution</h3>
+        <p class="lcard-meta">College-wide Leadership</p>
+        <p class="lcard-desc">Planning and leading large-scale college events from concept to delivery — managing cross-functional teams, logistics, and multi-department coordination under real operational pressure.</p>
+      </div>
+
+      <div class="leadership-card reveal-up" data-delay="0.2">
+        <div class="lcard-tag">Strategy</div>
+        <h3 class="lcard-title">Institutional Decision Making</h3>
+        <p class="lcard-meta">Student–Admin Interface</p>
+        <p class="lcard-desc">Participating in strategic planning discussions that shape curriculum, student welfare initiatives, and campus development roadmaps — translating student voice into institutional action.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS ===================== -->
+  <section id="skills" class="section skills">
+    <div class="section-label reveal-left">03 · Skills</div>
+    <div class="skills-header reveal-up">
+      <h2 class="section-title">Technical<br/>Arsenal</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-cluster reveal-up" data-delay="0.0">
+        <h4 class="cluster-label">
+          <span class="cluster-level cluster-strong">Strong</span>
+          Core Strengths
+        </h4>
+        <div class="skill-tags">
+          <span class="skill-tag">AWS Foundations</span>
+          <span class="skill-tag">Version Control</span>
+          <span class="skill-tag">Web Development</span>
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">Debugging</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Git / GitHub</span>
+          <span class="skill-tag">Linux</span>
+        </div>
+      </div>
+      <div class="skill-cluster reveal-up" data-delay="0.1">
+        <h4 class="cluster-label">
+          <span class="cluster-level cluster-intermediate">Intermediate</span>
+          Building Depth
+        </h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Dockerization</span>
+          <span class="skill-tag">Ansible</span>
+          <span class="skill-tag">Jira</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">Firebase</span>
+          <span class="skill-tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-cluster reveal-up" data-delay="0.2">
+        <h4 class="cluster-label">
+          <span class="cluster-level cluster-learning">Currently Learning</span>
+          Expanding Frontier
+        </h4>
+        <div class="skill-tags">
+          <span class="skill-tag skill-tag-learning">Kubernetes</span>
+          <span class="skill-tag skill-tag-learning">Terraform</span>
+          <span class="skill-tag skill-tag-learning">CI/CD Pipelines</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Floating Tech Icons -->
+    <div class="tech-icons-wrap reveal-up" data-delay="0.4" id="techIconsWrap">
+      <div class="tech-icons-heading">Technologies &amp; Tools</div>
+      <div class="tech-icons-grid" id="techIconsGrid">
+
+        <!-- AWS -->
+        <div class="tech-icon" data-name="AWS" data-depth="1.5">
+          <div class="tech-icon-inner">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-size="9" font-family="Inter,sans-serif" font-weight="700" fill="currentColor" letter-spacing="0.5">AWS</text>
+              <rect x="1" y="1" width="38" height="38" rx="9" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <span class="tech-icon-label">AWS</span>
+        </div>
+
+        <!-- Python -->
+        <div class="tech-icon" data-name="Python" data-depth="2.2">
+          <div class="tech-icon-inner">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 6C14 6 14.5 8.5 14.5 8.5V11.5H20.5V12.5H11.5C11.5 12.5 8 12.1 8 18C8 23.9 11.1 23.7 11.1 23.7H13V20.5C13 20.5 12.8 17.5 16 17.5H23.5C23.5 17.5 26.5 17.5 26.5 14.5V9.5C26.5 9.5 27 6 20 6Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+              <circle cx="17.5" cy="9.5" r="1" fill="currentColor"/>
+              <path d="M20 34C26 34 25.5 31.5 25.5 31.5V28.5H19.5V27.5H28.5C28.5 27.5 32 27.9 32 22C32 16.1 28.9 16.3 28.9 16.3H27V19.5C27 19.5 27.2 22.5 24 22.5H16.5C16.5 22.5 13.5 22.5 13.5 25.5V30.5C13.5 30.5 13 34 20 34Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+              <circle cx="22.5" cy="30.5" r="1" fill="currentColor"/>
+            </svg>
+          </div>
+          <span class="tech-icon-label">Python</span>
+        </div>
+
+        <!-- Docker -->
+        <div class="tech-icon" data-name="Docker" data-depth="1.8">
+          <div class="tech-icon-inner">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="7" y="14" width="5" height="4" rx="1" stroke="currentColor" stroke-width="1.3"/>
+              <rect x="13" y="14" width="5" height="4" rx="1" stroke="currentColor" stroke-width="1.3"/>
+              <rect x="19" y="14" width="5" height="4" rx="1" stroke="currentColor" stroke-width="1.3"/>
+              <rect x="13" y="9" width="5" height="4" rx="1" stroke="currentColor" stroke-width="1.3"/>
+              <rect x="19" y="9" width="5" height="4" rx="1" stroke="currentColor" stroke-width="1.3"/>
+              <path d="M5 22C5 22 5.5 25 9 25.5H28C28 25.5 33 25 33.5 19.5C33.5 19.5 30.5 19.5 29.5 17.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+              <circle cx="31" cy="16" r="1.5" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <span class="tech-icon-label">Docker</span>
+        </div>
+
+        <!-- Git -->
+        <div class="tech-icon" data-name="Git" data-depth="2.5">
+          <div class="tech-icon-inner">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M33.5 18.5L21.5 6.5C20.7 5.7 19.3 5.7 18.5 6.5L15.8 9.2L19.3 12.7C20.1 12.4 21.1 12.6 21.7 13.3C22.4 14 22.5 15 22.2 15.8L25.5 19.1C26.3 18.8 27.3 19 27.9 19.7C28.8 20.6 28.8 22 27.9 22.9C27 23.8 25.6 23.8 24.7 22.9C24.1 22.3 23.9 21.4 24.1 20.6L21 17.5V25.4C21.3 25.5 21.5 25.7 21.7 25.9C22.6 26.8 22.6 28.2 21.7 29.1C20.8 30 19.4 30 18.5 29.1C17.6 28.2 17.6 26.8 18.5 25.9C18.7 25.7 18.9 25.5 19.2 25.4V17.4C18.9 17.3 18.6 17.1 18.4 16.9C17.8 16.3 17.6 15.4 17.8 14.5L14.3 11L6.5 18.8C5.7 19.6 5.7 21 6.5 21.8L18.5 33.8C19.3 34.6 20.7 34.6 21.5 33.8L33.5 21.8C34.3 21 34.3 19.4 33.5 18.5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="tech-icon-label">Git</span>
+        </div>
+
+        <!-- GitHub -->
+        <div class="tech-icon" data-name="GitHub" data-depth="1.2">
+          <div class="tech-icon-inner">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 5C11.7 5 5 11.7 5 20C5 26.6 9.3 32.2 15.3 34.2C16 34.3 16.3 33.9 16.3 33.5V30.8C12.4 31.6 11.6 29 11.6 29C11 27.5 10.1 27.1 10.1 27.1C8.9 26.3 10.2 26.3 10.2 26.3C11.5 26.4 12.2 27.7 12.2 27.7C13.4 29.8 15.4 29.2 16.3 28.8C16.4 27.9 16.8 27.3 17.2 27C14.1 26.6 10.9 25.5 10.9 20.2C10.9 18.7 11.4 17.5 12.3 16.6C12.1 16.1 11.7 14.8 12.4 13.1C12.4 13.1 13.5 12.7 16.2 14.5C17.3 14.2 18.7 14 20 14C21.3 14 22.7 14.2 23.8 14.5C26.5 12.7 27.6 13.1 27.6 13.1C28.3 14.8 27.8 16.1 27.7 16.6C28.5 17.5 29.1 18.7 29.1 20.2C29.1 25.5 25.9 26.6 22.8 27C23.3 27.4 23.8 28.2 23.8 29.5V33.5C23.8 33.9 24 34.4 24.8 34.2C30.7 32.2 35 26.6 35 20C35 11.7 28.3 5 20 5Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="tech-icon-label">GitHub</span>
+        </div>
+
+        <!-- Linux -->
+        <div class="tech-icon" data-name="Linux" data-depth="2.0">
+          <div class="tech-icon-inner">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 4C17 4 15 7 15 11C15 13.5 15.3 15.5 16.5 17C14 18 12 20 11.5 23C11 26 12 29 14 31C15.5 32.5 17.5 33.5 18 34.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+              <path d="M20 4C23 4 25 7 25 11C25 13.5 24.7 15.5 23.5 17C26 18 28 20 28.5 23C29 26 28 29 26 31C24.5 32.5 22.5 33.5 22 34.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+              <circle cx="17.5" cy="14" r="1.5" fill="currentColor"/>
+              <circle cx="22.5" cy="14" r="1.5" fill="currentColor"/>
+              <path d="M18 18L20 20L22 18" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M12 33C10 31 9 35 12 35.5M28 33C30 31 31 35 28 35.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+              <path d="M14 35C14 35 17 36 20 36C23 36 26 35 26 35" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="tech-icon-label">Linux</span>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="tech-icon" data-name="JavaScript" data-depth="1.6">
+          <div class="tech-icon-inner">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="5" y="5" width="30" height="30" rx="3" stroke="currentColor" stroke-width="1.3"/>
+              <text x="50%" y="62%" dominant-baseline="middle" text-anchor="middle" font-size="13" font-family="Inter,sans-serif" font-weight="800" fill="currentColor">JS</text>
+            </svg>
+          </div>
+          <span class="tech-icon-label">JavaScript</span>
+        </div>
+
+        <!-- Kubernetes -->
+        <div class="tech-icon" data-name="Kubernetes" data-depth="2.8">
+          <div class="tech-icon-inner">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="1.3"/>
+              <path d="M20 8v5M20 27v5M8 20h5M27 20h5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+              <path d="M11.5 11.5l3.5 3.5M25 25l3.5 3.5M28.5 11.5L25 15M15 25l-3.5 3.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+              <circle cx="20" cy="20" r="3.5" stroke="currentColor" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <span class="tech-icon-label">Kubernetes</span>
+        </div>
+
+        <!-- Ansible -->
+        <div class="tech-icon" data-name="Ansible" data-depth="1.4">
+          <div class="tech-icon-inner">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="1.3"/>
+              <path d="M14 29L22 11L28 26" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M18 24L27 20" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="tech-icon-label">Ansible</span>
+        </div>
+
+        <!-- HTML -->
+        <div class="tech-icon" data-name="HTML" data-depth="1.9">
+          <div class="tech-icon-inner">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 6L10.5 33L20 36L29.5 33L32 6H8Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+              <path d="M13 11H27L26 22L20 24L14 22L13.7 18.5H16.5L16.7 20.5L20 21.5L23.3 20.5L23.5 17H13.3L13 11Z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="tech-icon-label">HTML</span>
+        </div>
+
+        <!-- CSS -->
+        <div class="tech-icon" data-name="CSS" data-depth="2.3">
+          <div class="tech-icon-inner">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 6L10.5 33L20 36L29.5 33L32 6H8Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+              <path d="M27 11H13L13.5 16H23L22.7 19.5H20L17.3 18.5H14.5L15 23L20 24.5L25 23L25.5 18.5" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="tech-icon-label">CSS</span>
+        </div>
+
+        <!-- Jira -->
+        <div class="tech-icon" data-name="Jira" data-depth="1.1">
+          <div class="tech-icon-inner">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 6L33 19L26 26L20 20L14 26L7 19L20 6Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+              <path d="M20 20L26 26L20 34L14 26L20 20Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <span class="tech-icon-label">Jira</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section id="experience" class="section experience">
+    <div class="section-label reveal-left">04 · Experience &amp; Professional Exposure</div>
+    <div class="experience-header reveal-up">
+      <h2 class="section-title">Practical<br/>Exposure</h2>
+      <p class="experience-subtext">Real-world technical engagement across domains — building production mindset early.</p>
+    </div>
+
+    <div class="experience-list">
+
+      <!-- Experience Card 1 -->
+      <div class="exp-card reveal-up" data-delay="0.0">
+        <div class="exp-card-left">
+          <div class="exp-status exp-status-active">Current</div>
+          <div class="exp-org">Uplatz</div>
+          <div class="exp-duration">Jan 2025 – Present</div>
+          <div class="exp-tech-stack">
+            <span>AWS</span>
+            <span>Linux</span>
+            <span>DevOps</span>
+            <span>Cloud</span>
+          </div>
+        </div>
+        <div class="exp-card-divider"></div>
+        <div class="exp-card-right">
+          <div class="exp-role-tag">Internship</div>
+          <h3 class="exp-role">AWS &amp; DevOps Trainee</h3>
+          <p class="exp-desc">Engaged in hands-on training covering core AWS services, cloud architecture principles, and foundational DevOps workflows. Developed practical understanding of deployment pipelines, infrastructure provisioning, and cloud-native tooling across EC2, S3, IAM, and VPC environments.</p>
+          <ul class="exp-points">
+            <li>Worked through structured cloud architecture modules with real-world lab environments</li>
+            <li>Applied IAM policy management, S3 storage architecture, and EC2 compute configuration</li>
+            <li>Built understanding of CI/CD concepts and deployment reliability frameworks</li>
+            <li>Gained exposure to monitoring, logging, and basic auto-scaling strategies</li>
+          </ul>
+          <div class="exp-outcome">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Strengthened practical cloud fundamentals in preparation for AWS certification
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Card 2 -->
+      <div class="exp-card reveal-up" data-delay="0.1">
+        <div class="exp-card-left">
+          <div class="exp-status">Completed</div>
+          <div class="exp-org">MBIT ISTE</div>
+          <div class="exp-duration">2024 – Present</div>
+          <div class="exp-tech-stack">
+            <span>Documentation</span>
+            <span>Knowledge Mgmt</span>
+            <span>Leadership</span>
+          </div>
+        </div>
+        <div class="exp-card-divider"></div>
+        <div class="exp-card-right">
+          <div class="exp-role-tag">Chapter Role</div>
+          <h3 class="exp-role">Documentation Head — ISTE Student Chapter</h3>
+          <p class="exp-desc">Leading all knowledge management, publication, and institutional documentation for the MBIT ISTE chapter. Responsible for structured content architecture, event documentation, and building an organised knowledge base for the student chapter.</p>
+          <ul class="exp-points">
+            <li>Architected documentation systems for events, workshops, and technical programs</li>
+            <li>Built standardised templates for institutional knowledge transfer</li>
+            <li>Coordinated cross-team documentation workflows across departments</li>
+          </ul>
+          <div class="exp-outcome">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Improved chapter knowledge continuity and publication quality significantly
+          </div>
+        </div>
+      </div>
+
+      <!-- Experience Card 3 -->
+      <div class="exp-card reveal-up" data-delay="0.2">
+        <div class="exp-card-left">
+          <div class="exp-status">Multiple Events</div>
+          <div class="exp-org">Various Orgs</div>
+          <div class="exp-duration">2023 – Present</div>
+          <div class="exp-tech-stack">
+            <span>Python</span>
+            <span>AI/ML</span>
+            <span>Web Dev</span>
+            <span>Problem Solving</span>
+          </div>
+        </div>
+        <div class="exp-card-divider"></div>
+        <div class="exp-card-right">
+          <div class="exp-role-tag">Competitive</div>
+          <h3 class="exp-role">Hackathon Participant &amp; Builder</h3>
+          <p class="exp-desc">Active participant in 20+ hackathons and technical competitions across national and college-level events. Each hackathon represents a compressed full-cycle build — ideation, architecture, implementation, and presentation — delivering functional prototypes under real time pressure.</p>
+          <ul class="exp-points">
+            <li>Shipped full-stack AI and web solutions within 24–48 hour competition windows</li>
+            <li>Collaborated in multi-disciplinary teams across domains including healthcare AI, civic tech, and security</li>
+            <li>Developed NeuroBot, Bi-op-sy, CivicTrack and other projects through hackathon cycles</li>
+          </ul>
+          <div class="exp-outcome">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            20+ competitions · Multiple stage-qualify results · Consistent shipment under pressure
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+      <div class="skill-bar-item">
+        <div class="skill-bar-header"><span>AWS / Cloud Foundations</span><span class="skill-pct">80%</span></div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-width="80"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-header"><span>Python & Machine Learning</span><span class="skill-pct">82%</span></div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-width="82"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-header"><span>Docker & Containerisation</span><span class="skill-pct">72%</span></div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-width="72"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-header"><span>Web Development</span><span class="skill-pct">78%</span></div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-width="78"></div></div>
+      </div>
+      <div class="skill-bar-item">
+        <div class="skill-bar-header"><span>Linux & System Administration</span><span class="skill-pct">70%</span></div>
+        <div class="skill-bar"><div class="skill-bar-fill" data-width="70"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="section projects">
+    <div class="section-label reveal-left">05 · Projects</div>
+    <div class="projects-header reveal-up">
+      <h2 class="section-title">Products<br/>Built</h2>
+      <p class="projects-subtext">Each project demonstrates systems thinking, execution speed, and real technical depth.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal-up" data-delay="0.0" data-tilt>
+        <div class="project-card-glow"></div>
+        <div class="project-num">01</div>
+        <div class="project-visual">
+          <div class="project-visual-inner neurobot-visual">
+            <div class="pv-shape pv-s1"></div>
+            <div class="pv-shape pv-s2"></div>
+            <div class="pv-shape pv-s3"></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span>Python</span><span>AI</span><span>NLP</span>
+          </div>
+          <h3 class="project-title">NeuroBot</h3>
+          <p class="project-desc">An intelligent AI-powered chatbot with deep NLP capabilities — understanding complex user queries and delivering contextual, intelligent responses in real time.</p>
+          <div class="project-footer">
+            <a href="#" class="project-link">View Project <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up" data-delay="0.07" data-tilt>
+        <div class="project-card-glow"></div>
+        <div class="project-num">02</div>
+        <div class="project-visual">
+          <div class="project-visual-inner biopsy-visual">
+            <div class="pv-shape pv-s1"></div>
+            <div class="pv-shape pv-s2"></div>
+            <div class="pv-shape pv-s3"></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span>AI</span><span>Healthcare</span><span>Vision</span>
+          </div>
+          <h3 class="project-title">Bi-op-sy</h3>
+          <p class="project-desc">A medical AI platform leveraging computer vision and deep learning to assist in biopsy analysis — bringing intelligent diagnostics to clinical workflows.</p>
+          <div class="project-footer">
+            <a href="#" class="project-link">View Project <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up" data-delay="0.14" data-tilt>
+        <div class="project-card-glow"></div>
+        <div class="project-num">03</div>
+        <div class="project-visual">
+          <div class="project-visual-inner redwish-visual">
+            <div class="pv-shape pv-s1"></div>
+            <div class="pv-shape pv-s2"></div>
+            <div class="pv-shape pv-s3"></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span>Node.js</span><span>Firebase</span><span>Web</span>
+          </div>
+          <h3 class="project-title">Redwish</h3>
+          <p class="project-desc">A smart social good engine connecting wishes to resources — powered by real-time database sync, elegant UX, and community-driven matching logic.</p>
+          <div class="project-footer">
+            <a href="#" class="project-link">View Project <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up" data-delay="0.21" data-tilt>
+        <div class="project-card-glow"></div>
+        <div class="project-num">04</div>
+        <div class="project-visual">
+          <div class="project-visual-inner civictrack-visual">
+            <div class="pv-shape pv-s1"></div>
+            <div class="pv-shape pv-s2"></div>
+            <div class="pv-shape pv-s3"></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span>Python</span><span>SQL</span><span>Civic</span>
+          </div>
+          <h3 class="project-title">CivicTrack</h3>
+          <p class="project-desc">A civic issue management system enabling transparent reporting, tracking, and resolution of public infrastructure problems through data-driven workflows.</p>
+          <div class="project-footer">
+            <a href="#" class="project-link">View Project <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up" data-delay="0.28" data-tilt>
+        <div class="project-card-glow"></div>
+        <div class="project-num">05</div>
+        <div class="project-visual">
+          <div class="project-visual-inner defensys-visual">
+            <div class="pv-shape pv-s1"></div>
+            <div class="pv-shape pv-s2"></div>
+            <div class="pv-shape pv-s3"></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span>Python</span><span>Security</span><span>Automation</span>
+          </div>
+          <h3 class="project-title">DefenSys</h3>
+          <p class="project-desc">An automated defence system built to detect, analyze, and respond to security anomalies in real time — combining rule-based logic with intelligent threat classification.</p>
+          <div class="project-footer">
+            <a href="#" class="project-link">View Project <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card reveal-up" data-delay="0.35" data-tilt>
+        <div class="project-card-glow"></div>
+        <div class="project-num">06</div>
+        <div class="project-visual">
+          <div class="project-visual-inner blurr-visual">
+            <div class="pv-shape pv-s1"></div>
+            <div class="pv-shape pv-s2"></div>
+            <div class="pv-shape pv-s3"></div>
+          </div>
+        </div>
+        <div class="project-info">
+          <div class="project-tags">
+            <span>Web</span><span>Privacy</span><span>JavaScript</span>
+          </div>
+          <h3 class="project-title">Blurr</h3>
+          <p class="project-desc">A privacy-first web tool that intelligently identifies and obscures sensitive content in real time — giving users frictionless control over what they expose online.</p>
+          <div class="project-footer">
+            <a href="#" class="project-link">View Project <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M2 7h10M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== ACADEMIC EXCELLENCE ===================== -->
+  <section id="academics" class="section academics">
+    <div class="section-label reveal-left">06 · Academic Excellence</div>
+    <div class="academics-header reveal-up">
+      <h2 class="section-title">Top of<br/>the Class</h2>
+      <p class="academics-subtext">Consistently excelling in academics with top performance across recent semesters — reflecting discipline, technical understanding, and execution consistency.</p>
+    </div>
+
+    <div class="academics-grid">
+      <div class="academic-card academic-card-highlight reveal-up" data-delay="0.0">
+        <div class="academic-badge">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" fill="rgba(255,255,255,0.05)"/>
+          </svg>
+          Perfect Score
+        </div>
+        <div class="academic-gpa">10.0</div>
+        <div class="academic-sem">5th Semester GPA</div>
+        <div class="academic-note">Out of 10.0 · Secured top academic standing in college</div>
+      </div>
+
+      <div class="academic-card reveal-up" data-delay="0.1">
+        <div class="academic-gpa">9.6</div>
+        <div class="academic-sem">4th Semester GPA</div>
+        <div class="academic-note">Consistent high performance across semesters</div>
+      </div>
+
+      <div class="academic-statement reveal-up" data-delay="0.2">
+        <div class="acad-stat-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none">
+            <path d="M22 10v6M2 10l10-8 10 8-10 8-10-8z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6 12v8h12v-8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Institutional Top Ranker</h3>
+        <p>Secured top academic standing at MBIT across two consecutive semesters. Academic excellence fuels the discipline required to build reliable, high-quality engineering systems.</p>
+        <div class="acad-tags">
+          <span>Consistent Performer</span>
+          <span>Two-Semester Streak</span>
+          <span>Technical Depth</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ACHIEVEMENTS ===================== -->
+  <section id="achievements" class="section achievements">
+    <div class="achievements-inner">
+      <div class="section-label reveal-left">07 · Achievements</div>
+      <h2 class="section-title reveal-up">By the<br/>Numbers</h2>
+      <div class="achievements-grid">
+        <div class="achieve-card reveal-up" data-delay="0.0">
+          <span class="achieve-num" data-count="20">0</span><span class="achieve-sup">+</span>
+          <span class="achieve-label">Hackathons Participated</span>
+          <div class="achieve-bar"></div>
+        </div>
+        <div class="achieve-card reveal-up" data-delay="0.07">
+          <span class="achieve-num" data-count="6">0</span>
+          <span class="achieve-label">Projects Shipped</span>
+          <div class="achieve-bar"></div>
+        </div>
+        <div class="achieve-card reveal-up" data-delay="0.14">
+          <span class="achieve-num" data-count="2">0</span>
+          <span class="achieve-label">Leadership Roles</span>
+          <div class="achieve-bar"></div>
+        </div>
+        <div class="achieve-card reveal-up" data-delay="0.21">
+          <span class="achieve-num" data-count="5">0</span>
+          <span class="achieve-label">Certifications Earned</span>
+          <div class="achieve-bar"></div>
+        </div>
+        <div class="achieve-card reveal-up" data-delay="0.28">
+          <span class="achieve-num" data-count="10">0</span><span class="achieve-sup">+</span>
+          <span class="achieve-label">Seminars &amp; Events</span>
+          <div class="achieve-bar"></div>
+        </div>
+        <div class="achieve-card reveal-up" data-delay="0.35">
+          <span class="achieve-num">10.0</span>
+          <span class="achieve-label">Best Semester GPA</span>
+          <div class="achieve-bar"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CAREER VISION ===================== -->
+  <section id="vision" class="section vision">
+    <div class="vision-inner reveal-up">
+      <div class="section-label">08 · Vision</div>
+      <h2 class="vision-heading">Building the<br/><span class="vision-accent">future stack.</span></h2>
+      <div class="vision-pillars">
+        <div class="vision-pillar reveal-up" data-delay="0.05"><span>DevOps Engineering</span></div>
+        <div class="vision-pillar reveal-up" data-delay="0.1"><span>AWS Certification</span></div>
+        <div class="vision-pillar reveal-up" data-delay="0.15"><span>Cloud Infrastructure</span></div>
+        <div class="vision-pillar reveal-up" data-delay="0.2"><span>CI/CD Automation</span></div>
+        <div class="vision-pillar reveal-up" data-delay="0.25"><span>Scalable Platforms</span></div>
+        <div class="vision-pillar reveal-up" data-delay="0.3"><span>Tech Ventures</span></div>
+      </div>
+      <p class="vision-text reveal-up" data-delay="0.35">
+        Focused on becoming a DevOps engineer in a product-driven environment — building strong cloud infrastructure expertise, achieving advanced AWS certifications, and eventually creating impactful, scalable technology ventures that reshape how modern teams ship software.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact" class="section contact">
+    <div class="section-label reveal-left">09 · Contact</div>
+    <div class="contact-grid">
+      <div class="contact-left reveal-left">
+        <h2 class="section-title">Let's Build<br/>Something.</h2>
+        <p class="contact-sub">Open to internships, collaborations, and bold ideas. If you're building something that matters — let's talk.</p>
+        <div class="contact-links">
+          <a href="mailto:hys200212@gmail.com" class="contact-link-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="1.5"/></svg>
+            hys200212@gmail.com
+          </a>
+          <a href="https://github.com/Hxxrshh" target="_blank" class="contact-link-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            github.com/Hxxrshh
+          </a>
+          <a href="https://www.linkedin.com/in/harsh-soni-558b39281" target="_blank" class="contact-link-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.5"/></svg>
+            linkedin.com/in/harsh-soni
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal-right" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="your@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me what you're building..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary form-submit">
+          <span>Send Message</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M14 8H2M9 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="form-success" id="formSuccess">Message sent. I'll be in touch soon.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-logo">HYS</span>
+      <span class="footer-copy">© 2025 Harsh Yogesh Soni. Designed with precision.</span>
+      <span class="footer-right">B.Tech IT · MBIT · 3rd Year</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
